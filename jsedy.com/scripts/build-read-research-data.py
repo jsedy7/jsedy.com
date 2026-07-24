@@ -6,7 +6,7 @@ import re
 import subprocess
 from pathlib import Path
 
-ROOT = Path('/Users/jsedy/jsedy.com website/jsedy.com')
+ROOT = Path(__file__).resolve().parents[1]
 KB = ROOT / 'knowledgebase' / 'projects' / 'howlops' / 'competitors-research'
 OUT = ROOT / 'data' / 'read_research.json'
 
