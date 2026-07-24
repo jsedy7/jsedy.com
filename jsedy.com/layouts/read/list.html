@@ -1,4 +1,29 @@
 {{- define "main" }}
+{{- $research := site.Data.read_research }}
+{{- $competitors := index $research "competitors" }}
+{{- $sectionSlug := path.Base (strings.TrimSuffix "/" .File.Dir) }}
+{{- $sectionMeta := cond $sectionSlug (index $competitors $sectionSlug) nil }}
+
+<style>
+.read-grid { display:grid; gap:1rem; }
+.read-meta-grid { display:grid; gap:1rem; margin:1rem 0 1.5rem; }
+@media (min-width: 900px) {
+  .read-meta-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .read-meta-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.read-card { border:1px solid var(--border); border-radius:14px; padding:1rem 1.1rem; background:var(--entry); position:relative; }
+.read-card h3, .read-card h4 { margin-top:0; margin-bottom:.5rem; }
+.read-badges { display:flex; flex-wrap:wrap; gap:.45rem; margin:.6rem 0 .8rem; }
+.read-badge { font-size:.78rem; padding:.22rem .5rem; border-radius:999px; background:var(--code-bg); color:var(--secondary); }
+.read-list { margin:.55rem 0 0 1.1rem; }
+.read-list li { margin:.25rem 0; }
+.read-kicker { color:var(--secondary); font-size:.92rem; margin:.15rem 0 .6rem; }
+.read-footer { margin-top:.8rem; color:var(--secondary); font-size:.85rem; display:flex; flex-wrap:wrap; gap:.8rem; }
+.read-feature-grid { display:grid; gap:1rem; }
+.read-feature-link { position:absolute; inset:0; }
+.read-note { color:var(--secondary); font-size:.95rem; }
+</style>
+
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}
@@ -19,47 +44,108 @@
 </header>
 
 {{- if .Sections }}
-{{- /* Top-level /read/ — show competitor sections as category cards */}}
-{{- range .Sections }}
-<article class="post-entry">
-  <header class="entry-header">
-    <h2>{{- or .Title (.Path | path.Base | humanize | title) }}</h2>
-  </header>
-  {{- if .Description }}
-  <div class="entry-content">
-    <p>{{ .Description | plainify }}</p>
+<div class="read-grid">
+  {{- range .Sections }}
+  {{- $slug := path.Base (strings.TrimSuffix "/" .File.Dir) }}
+  {{- $meta := index $competitors $slug }}
+  <article class="read-card">
+    <h3>{{- or .Title (.Path | path.Base | humanize | title) }}</h3>
+    <div class="read-kicker">{{ if .Description }}{{ .Description | plainify }}{{ else }}Competitor research section{{ end }}</div>
+    <div class="read-badges">
+      {{- with $meta }}
+        {{- with index . "last_checked" }}<span class="read-badge">Checked: {{ . }}</span>{{ end }}
+        {{- with index . "last_commit_date" }}<span class="read-badge">Updated: {{ . }}</span>{{ end }}
+      {{- end }}
+      <span class="read-badge">{{ len .RegularPagesRecursive }} research notes</span>
+    </div>
+    {{- with $meta }}
+      {{- $findings := index . "key_findings" }}
+      {{- if gt (len $findings) 0 }}
+      <ul class="read-list">
+        {{- range first 2 $findings }}<li>{{ . }}</li>{{- end }}
+      </ul>
+      {{- end }}
+      <p class="read-note">{{ index . "revenue_status" }}</p>
+      {{- with index . "last_commit_subject" }}<div class="read-footer"><span>Latest change: {{ . }}</span></div>{{ end }}
+    {{- end }}
+    <a class="read-feature-link" aria-label="Open {{ or .Title (.Path | path.Base) }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- else }}
+  {{- with $sectionMeta }}
+  <div class="read-meta-grid three">
+    <section class="read-card">
+      <h4>At a glance</h4>
+      <div class="read-badges">
+        {{- with index . "last_checked" }}<span class="read-badge">Checked: {{ . }}</span>{{ end }}
+        {{- with index . "last_commit_date" }}<span class="read-badge">Updated: {{ . }}</span>{{ end }}
+      </div>
+      {{- $findings := index . "key_findings" }}
+      {{- if gt (len $findings) 0 }}
+      <ul class="read-list">{{ range first 4 $findings }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- else }}
+      <p class="read-note">No extracted summary bullets yet.</p>
+      {{- end }}
+    </section>
+    <section class="read-card">
+      <h4>HowlOps angle</h4>
+      {{- $msg := index . "howlops_messaging" | default (slice) }}
+      {{- if gt (len $msg) 0 }}
+      <ul class="read-list">{{ range first 4 $msg }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- else }}
+      <p class="read-note">Research has not yet produced a compact HowlOps messaging recommendation for this competitor.</p>
+      {{- end }}
+    </section>
+    <section class="read-card">
+      <h4>Commercial snapshot</h4>
+      {{- $pricing := index . "commercial_snapshot" | default (slice) }}
+      {{- if gt (len $pricing) 0 }}
+      <ul class="read-list">{{ range first 4 $pricing }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- else }}
+      <p class="read-note">No compact pricing snapshot extracted yet.</p>
+      {{- end }}
+      <p class="read-note" style="margin-top:.8rem;">{{ index . "revenue_status" }}</p>
+    </section>
   </div>
   {{- end }}
-  <footer class="entry-footer">
-    <span>{{ len .RegularPagesRecursive }} articles</span>
+
+  {{- $paginator := .Paginate .RegularPages }}
+  <div class="read-feature-grid">
+  {{- range $paginator.Pages }}
+    {{- $pageSlug := .File.BaseFileName }}
+    {{- $featureMeta := dict }}
+    {{- with $sectionMeta }}
+      {{- $featureMeta = index (where (index . "features") "slug" $pageSlug) 0 }}
+    {{- end }}
+    <article class="read-card">
+      <h3>{{- or .Title (.Path | path.Base | humanize | title) }}</h3>
+      <div class="read-badges">
+        {{- with index $featureMeta "researched_at" }}<span class="read-badge">Researched: {{ . }}</span>{{ end }}
+        {{- with index $featureMeta "last_commit_date" }}<span class="read-badge">Updated: {{ . }}</span>{{ end }}
+      </div>
+      {{- with index $featureMeta "summary" }}<p>{{ . }}</p>{{ else }}{{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}{{ end }}
+      {{- $hp := index $featureMeta "howlops_points" | default (slice) }}
+      {{- if gt (len $hp) 0 }}
+      <h4 style="margin:1rem 0 .35rem;">Why it matters for HowlOps</h4>
+      <ul class="read-list">{{ range first 3 $hp }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- end }}
+      {{- with index $featureMeta "last_commit_subject" }}<div class="read-footer"><span>Latest change: {{ . }}</span></div>{{ end }}
+      <a class="read-feature-link" aria-label="Open {{ or .Title (.Path | path.Base) }}" href="{{ .Permalink }}"></a>
+    </article>
+  {{- end }}
+  </div>
+  {{- if gt $paginator.TotalPages 1 }}
+  <footer class="page-footer">
+    <nav class="pagination">
+      {{- if $paginator.HasPrev }}
+      <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">«&nbsp;{{ i18n "prev_page" }}</a>
+      {{- end }}
+      {{- if $paginator.HasNext }}
+      <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }}&nbsp;»</a>
+      {{- end }}
+    </nav>
   </footer>
-  <a class="entry-link" aria-label="section link to {{ or .Title (.Path | path.Base) }}" href="{{ .Permalink }}"></a>
-</article>
+  {{- end }}
 {{- end }}
-
-{{- else }}
-{{- /* Competitor section — show regular pages (feature articles) */}}
-{{- $paginator := .Paginate .RegularPages }}
-{{- range $paginator.Pages }}
-<article class="post-entry">
-  <header class="entry-header">
-    <h2>{{- or .Title (.Path | path.Base | humanize | title) }}</h2>
-  </header>
-  <a class="entry-link" aria-label="post link to {{ or .Title (.Path | path.Base) }}" href="{{ .Permalink }}"></a>
-</article>
-{{- end }}
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">«&nbsp;{{ i18n "prev_page" }}</a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }}&nbsp;»</a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
-{{- end }}
-
 {{- end }}

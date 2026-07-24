@@ -1,0 +1,67 @@
+{{- define "main" }}
+{{- $research := site.Data.read_research }}
+{{- $competitors := index $research "competitors" }}
+{{- $sectionSlug := path.Base (strings.TrimSuffix "/" .CurrentSection.File.Dir) }}
+{{- $sectionMeta := index $competitors $sectionSlug }}
+{{- $featureMeta := dict }}
+{{- with $sectionMeta }}
+  {{- $featureMeta = index (where (index . "features") "slug" $.File.BaseFileName) 0 }}
+{{- end }}
+{{- $content := .RawContent }}
+{{- $content = replaceRE `(?s)\n## 8\. Evidence URLs.*$` "" $content }}
+{{- $content = replaceRE `(?s)\n## Evidence URLs.*$` "" $content }}
+
+<style>
+.read-meta-grid { display:grid; gap:1rem; margin:1rem 0 1.5rem; }
+@media (min-width: 900px) { .read-meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.read-card { border:1px solid var(--border); border-radius:14px; padding:1rem 1.1rem; background:var(--entry); }
+.read-badges { display:flex; flex-wrap:wrap; gap:.45rem; margin:.6rem 0 .8rem; }
+.read-badge { font-size:.78rem; padding:.22rem .5rem; border-radius:999px; background:var(--code-bg); color:var(--secondary); }
+.read-list { margin:.55rem 0 0 1.1rem; }
+.read-list li { margin:.25rem 0; }
+.read-note { color:var(--secondary); font-size:.95rem; }
+.read-body { margin-top:1.5rem; }
+</style>
+
+<article class="post-single">
+  <header class="post-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
+    <div class="read-badges">
+      {{- with index $featureMeta "researched_at" }}<span class="read-badge">Researched: {{ . }}</span>{{ end }}
+      {{- with index $featureMeta "last_commit_date" }}<span class="read-badge">Updated: {{ . }}</span>{{ end }}
+      {{- with $sectionMeta }}{{ with index . "title" }}<span class="read-badge">Product: {{ . }}</span>{{ end }}{{ end }}
+    </div>
+    {{- with index $featureMeta "summary" }}<div class="post-description">{{ . }}</div>{{ end }}
+  </header>
+
+  <div class="read-meta-grid">
+    <section class="read-card">
+      <h3 style="margin-top:0;">What changed</h3>
+      {{- with index $featureMeta "last_commit_subject" }}<p>{{ . }}</p>{{ else }}<p class="read-note">No commit summary extracted.</p>{{ end }}
+      {{- with index $sectionMeta "revenue_status" }}<p class="read-note" style="margin-top:.8rem;">{{ . }}</p>{{ end }}
+    </section>
+    <section class="read-card">
+      <h3 style="margin-top:0;">Why it matters for HowlOps</h3>
+      {{- $hp := index $featureMeta "howlops_points" | default (slice) }}
+      {{- if gt (len $hp) 0 }}
+      <ul class="read-list">{{ range first 4 $hp }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- else }}
+      <p class="read-note">This note does not yet have an extracted compact HowlOps impact block.</p>
+      {{- end }}
+    </section>
+  </div>
+
+  {{- $pricing := index $featureMeta "pricing_points" | default (slice) }}
+  {{- if gt (len $pricing) 0 }}
+  <section class="read-card" style="margin-bottom:1.5rem;">
+    <h3 style="margin-top:0;">Commercial / packaging notes</h3>
+    <ul class="read-list">{{ range first 4 $pricing }}<li>{{ . }}</li>{{ end }}</ul>
+  </section>
+  {{- end }}
+
+  <div class="read-body post-content">
+    {{ $content | markdownify }}
+  </div>
+</article>
+{{- end }}

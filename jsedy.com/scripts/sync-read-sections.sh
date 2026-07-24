@@ -31,3 +31,6 @@ for index_dir in "$INDEX_DIR"/*/; do
     echo "Removed: $index_dir"
   fi
 done
+
+# Refresh derived research metadata used by Hugo templates
+python3 scripts/build-read-research-data.py
