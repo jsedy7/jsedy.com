@@ -1,0 +1,1478 @@
+{
+  "generated_from": "/Users/jsedy/jsedy.com website/jsedy.com/knowledgebase/projects/howlops/competitors-research",
+  "overall": {
+    "sellability_posture": "Current evidence supports founder-led pilots and narrow first paying clients sooner than broad self-serve scale.",
+    "priorities": [
+      "alert reliability",
+      "debugability / audit trail",
+      "noise control / anti-flood",
+      "onboarding clarity",
+      "teprve potom další feature surface area"
+    ],
+    "pricing_truth_risk": "Tohle teď nevypadá jako chybějící uptime produkt, ale jako problém cen/trustu v acquisition a onboardingu. Uživatel může ještě před vytvořením prvního monitoru narazit na tři různé odpovědi o intervalech, heartbeatech a ping gate; právě tímhle působí HowlOps méně důvěryhodně než UptimeRobot nebo Better Stack.",
+    "pricing_next_step": "Dát api/internal/services/tier_public.go roli jediného veřejného source of truth pro limity a z něj generovat/číst i tier-limits.mdx, copy create modalu a pricing metadata; nejvyšší návratnost teď má srovnat čísla, ne přidávat další monitoring capability.",
+    "not_indexable_note": "This summary surface is intentionally marked noindex / nofollow."
+  },
+  "buckets": {
+    "stronger": [
+      {
+        "slug": "hlidam-to",
+        "title": "hlidam.to",
+        "verdict": "Lepší pro HowlOps, ale bez nového shipped posunu."
+      },
+      {
+        "slug": "monitoringdostupnosti-cz",
+        "title": "monitoringdostupnosti.cz",
+        "verdict": "Lepší pro HowlOps, ale bez nového shipped posunu od minulého revalidation běhu."
+      }
+    ],
+    "mixed": [
+      {
+        "slug": "alertops",
+        "title": "AlertOps",
+        "verdict": "Částečně lepší, ale bez nového shipped posunu v hlavní mezeře."
+      },
+      {
+        "slug": "blameless",
+        "title": "Blameless",
+        "verdict": "Stejný, s dílčím posunem HowlOps."
+      },
+      {
+        "slug": "cronitor",
+        "title": "Cronitor",
+        "verdict": "Stejný."
+      },
+      {
+        "slug": "dead-mans-snitch",
+        "title": "Dead Man's Snitch",
+        "verdict": "No compact verdict extracted yet."
+      },
+      {
+        "slug": "dynatrace",
+        "title": "Dynatrace",
+        "verdict": "Stejný až částečně lepší."
+      },
+      {
+        "slug": "firehydrant",
+        "title": "FireHydrant",
+        "verdict": "Částečně lepší, ale FireHydrant zůstává před HowlOps v change-aware a incident-native orchestration vrstvě."
+      },
+      {
+        "slug": "healthchecks-io",
+        "title": "Healthchecks.io",
+        "verdict": "Spíš horší v úzkém cron/job use-casu, lepší jen v širší okolní platformě."
+      },
+      {
+        "slug": "hund-io",
+        "title": "Hund.io",
+        "verdict": "Stejný až jen částečně lepší pro HowlOps, ale bez nového shipped posunu."
+      },
+      {
+        "slug": "hyperping",
+        "title": "HyperPing",
+        "verdict": "Stejný až mírně horší v trust clarity."
+      },
+      {
+        "slug": "ilert",
+        "title": "ilert",
+        "verdict": "Částečně lepší."
+      },
+      {
+        "slug": "incident-io",
+        "title": "incident.io",
+        "verdict": "Částečně lepší."
+      },
+      {
+        "slug": "instatus",
+        "title": "Instatus",
+        "verdict": "Částečně lepší, ale Instatus dál vede."
+      },
+      {
+        "slug": "jira-service-management",
+        "title": "Jira Service Management",
+        "verdict": "Částečně lepší."
+      },
+      {
+        "slug": "opsgenie",
+        "title": "Opsgenie",
+        "verdict": "Částečně lepší."
+      },
+      {
+        "slug": "pagerduty",
+        "title": "PagerDuty",
+        "verdict": "Stejný v shipped realitě, částečně lepší jen v in-progress delivery trust vrstvě."
+      },
+      {
+        "slug": "pingdom",
+        "title": "Pingdom",
+        "verdict": "Částečně lepší, ale bez nového posunu."
+      },
+      {
+        "slug": "rootly",
+        "title": "Rootly",
+        "verdict": "Částečně lepší."
+      },
+      {
+        "slug": "site24x7",
+        "title": "Site24x7",
+        "verdict": "Stejný až jen částečně lepší."
+      },
+      {
+        "slug": "squadcast",
+        "title": "Squadcast",
+        "verdict": "Stejný vůči minulému revalidation, celkově jen částečně lepší."
+      },
+      {
+        "slug": "status-cake",
+        "title": "Status Cake",
+        "verdict": "Částečně lepší, ale bez nového posunu oproti minulému běhu."
+      },
+      {
+        "slug": "status-io",
+        "title": "Status.io",
+        "verdict": "Stejný v shipped realitě, částečně lepší jen v in-progress směru."
+      },
+      {
+        "slug": "statuscast",
+        "title": "StatusCast",
+        "verdict": "Stejný / bez nového shipped posunu HowlOps."
+      },
+      {
+        "slug": "statuspage",
+        "title": "Atlassian Statuspage",
+        "verdict": "No compact verdict extracted yet."
+      },
+      {
+        "slug": "statuspal",
+        "title": "StatusPal",
+        "verdict": "Částečně lepší pro HowlOps, ale ne v rozhodujících vrstvách."
+      },
+      {
+        "slug": "taskcall",
+        "title": "TaskCall",
+        "verdict": "Stejný."
+      },
+      {
+        "slug": "uptime-com",
+        "title": "Uptime.com",
+        "verdict": "Částečně lepší pro HowlOps."
+      },
+      {
+        "slug": "uptime-kuma",
+        "title": "Uptime Kuma",
+        "verdict": "Částečně lepší."
+      },
+      {
+        "slug": "uptimecrow",
+        "title": "UptimeCrow",
+        "verdict": "Částečně lepší, ale bez nového shipped posunu."
+      },
+      {
+        "slug": "uptimerobot",
+        "title": "UptimeRobot",
+        "verdict": "Částečně lepší pro HowlOps."
+      },
+      {
+        "slug": "xmatters",
+        "title": "xMatters",
+        "verdict": "Stejný až jen částečně lepší."
+      }
+    ],
+    "weaker": [
+      {
+        "slug": "better-stack",
+        "title": "Better Stack",
+        "verdict": "Horší pro HowlOps."
+      },
+      {
+        "slug": "checkly",
+        "title": "Checkly",
+        "verdict": "Částečně lepší pro HowlOps, ale celkově stále za Checkly v developer-native hloubce."
+      },
+      {
+        "slug": "goalert",
+        "title": "GoAlert",
+        "verdict": "Stejný až mírně horší pro HowlOps."
+      },
+      {
+        "slug": "grafana-irm",
+        "title": "Grafana IRM",
+        "verdict": "Částečně lepší, ale pořád slabší ve Slack-native execution a incident-native AI workflow."
+      },
+      {
+        "slug": "victorops",
+        "title": "VictorOps",
+        "verdict": "Částečně lepší pro HowlOps, ale celkově stále za VictorOps v incident coordination hloubce."
+      }
+    ]
+  },
+  "competitors": {
+    "alertops": {
+      "slug": "alertops",
+      "title": "AlertOps",
+      "description": "",
+      "last_checked": "2026-07-21T18:39:25Z",
+      "last_commit_date": "2026-07-21",
+      "last_commit_subject": "docs: revalidate alertops vs howlops",
+      "verdict": "Částečně lepší, ale bez nového shipped posunu v hlavní mezeře.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "no-code Workflow builder, Dynamic Routing, Scheduled workflows, escalation override, preview s počtem subscriberů/kanálů před broadcastem, veřejně vysvětlený multi-role union a entitlement tree"
+      ],
+      "what_changed": [
+        "Branch kontext se zúžil jen na origin/js/fab-2, ale hlavní alertopsovou mezeru neuzavírá.",
+        "Shipped incident/stakeholder základ HowlOps je silný, ale pořád méně disciplinovaný než u AlertOps.",
+        "Identity a integrace už nejsou hlavní slabina; rozdíl je ve workflow a governance explainability."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukázala další vysoce hodnotná lokálně doložitelná oblast, která by měnila prioritu závěrů; produkt je pro aktuální pass považovaný za uzavřený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Enterprise: $28 /user/month",
+        "Live Call Routing Phone Number: od vyšších plánů 1 US/Canada Free, +$10/mo for each additional number,",
+        "US/Canada Live Call Routing: 100 min free/account, $0.10/min after,",
+        "Standard: $8 /user/month — „Essential incident management for growing teams.”",
+        "Enterprise: $28 /user/month — „Full platform capabilities with dedicated support and SLAs.”"
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Enterprise: $28 /user/month). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "major incident, war room, public updates, status-page subscriber e-maily a maintenance notifikace, custom roles, MFA, SAML, OIDC, SCIM, široký integrační surface, Alertmanager, REST API, CLI, hostovaný MCP",
+      "latest_research_file": "2026-07-21_18_alertops-revalidation-vs-howlops.md"
+    },
+    "better-stack": {
+      "slug": "better-stack",
+      "title": "Better Stack",
+      "description": "",
+      "last_checked": "2026-07-24T00:13:05Z",
+      "last_commit_date": "2026-07-24",
+      "last_commit_subject": "docs: revalidate better-stack vs howlops",
+      "verdict": "Horší pro HowlOps.",
+      "verdict_category": "weaker",
+      "where_howlops_lags": [
+        "shipped log management",
+        "shipped tracing",
+        "shipped error tracking",
+        "shipped telemetry ingestion/query platform",
+        "shipped veřejný Terraform / provider story",
+        "shipped Better Stack import na main"
+      ],
+      "what_changed": [
+        "Telemetry náskok Better Stacku zůstává beze změny.",
+        "Buyer-facing vs/betterstack stránka na main je důkazní trust problém.",
+        "SSO story HowlOps je silnější v docs než v login runtime."
+      ],
+      "priority_for_howlops": [
+        "shipped log management",
+        "shipped tracing",
+        "shipped error tracking",
+        "shipped telemetry ingestion/query platform",
+        "shipped veřejný Terraform / provider story"
+      ],
+      "relative_strength_note": "Aktuální corpus říká, že HowlOps proti tomuto produktu zatím spíš dohání šíři, hloubku nebo trust vrstvu.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Better Stack samostatně účtuje nativní incident management přes Slack & Teams za $9 per responder license per month, což je důležité, protože některé vstupní body AI SRE jsou explicitně chat-native.",
+        "Free: $0/měsíc; 10 monitors & heartbeats, 1 status page, Slack & e-mail alerts, 100k exceptions/month, 5k session replays, malé telemetrické allotments, zahrnutý jeden responder.",
+        "Slack/Teams-based native incident workflows: $9 za responder licenci měsíčně navíc nad responder konstruktem."
+      ],
+      "public_revenue_signals": [
+        "PROJECT_STATUS.md označuje admin-side MRR/ARR reporting jako stub"
+      ],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Better Stack samostatně účtuje nativní incident management přes Slack & Teams za $9 per responder license per month, což je důležité, protože některé vstupní body AI SRE jsou explicitně chat-native.). Dokud HowlOps proti této třídě produktu neuzavře hlavní gapy, je bezpečnější prodávat úzký pilot / team use case než se tvářit jako plná náhrada.",
+      "shipped_surface_excerpt": "HTTP / ping / SSL expiry / heartbeat / keyword monitoring, incidents, public status pages, custom_domain, email subscriber flow, on-call schedules, overrides, escalation-policies",
+      "latest_research_file": "2026-07-24_00_better-stack-revalidation-vs-howlops.md"
+    },
+    "blameless": {
+      "slug": "blameless",
+      "title": "Blameless",
+      "description": "",
+      "last_checked": null,
+      "last_commit_date": "2026-07-13",
+      "last_commit_subject": "docs: revalidate blameless vs howlops",
+      "verdict": "Stejný, s dílčím posunem HowlOps.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "ověřitelný současný samostatný product surface Blameless",
+        "jasně doložený no-code orchestration builder",
+        "hlubší collaborative incident workflow, které lze připsat přímo dnešnímu Blameless"
+      ],
+      "what_changed": [
+        "Největší problém už není jen feature gap, ale nedostatek samostatně ověřitelné competitor reality.",
+        "HowlOps má dnes na main podstatně silnější incident a post-incident základ, než naznačoval starší minimální záznam u Blameless.",
+        "Branch kontext posiluje trust a dokumentační povrch, ale neuzavírá collaborative/orchestration mezeru."
+      ],
+      "priority_for_howlops": [
+        "ověřitelný současný samostatný product surface Blameless",
+        "jasně doložený no-code orchestration builder",
+        "hlubší collaborative incident workflow, které lze připsat přímo dnešnímu Blameless"
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "incidents, acknowledge / resolve / declare-major, responder roster, comments, timeline, evidence markers",
+      "latest_research_file": "2026-07-13_17_blameless-revalidation-vs-howlops.md"
+    },
+    "checkly": {
+      "slug": "checkly",
+      "title": "Checkly",
+      "description": "",
+      "last_checked": "2026-07-23T11:48:38Z",
+      "last_commit_date": "2026-07-23",
+      "last_commit_subject": "docs: revalidate checkly vs howlops",
+      "verdict": "Částečně lepší pro HowlOps, ale celkově stále za Checkly v developer-native hloubce.",
+      "verdict_category": "weaker",
+      "where_howlops_lags": [
+        "shipped Playwright / browser transaction monitoring",
+        "shipped OpenTelemetry trace korelace z failujícího checku do backend trace",
+        "veřejně čitelný Monitoring as Code / Terraform / CLI governance story pro monitoring",
+        "explicitní service API keys surface oddělený od uživatelských tokenů",
+        "stejně konkrétní public sizing/failover truth pro private execution"
+      ],
+      "what_changed": [
+        "HowlOps už má skutečnou private-execution foundation, ne jen náznak.",
+        "Identity a token governance HowlOps se mezitím posunuly výrazněji, než naznačoval původní Checkly text.",
+        "Největší mezera proti Checkly zůstává v browser/tracing/MaC hloubce."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se dál neukazuje další vysoce hodnotná lokální revalidation práce, která by bez nového výrazného signálu převrátila hlavní závěr vůči HowlOps.",
+        "Návrat dává smysl hlavně pokud HowlOps skutečně shipne browser synthetics, OpenTelemetry korelaci, account-level service tokeny nebo opraví SSO docs/runtime drift do jedné konzistentní shipped story.",
+        "Checkly je po tomto běhu v revalidation passu považovaný za dokončený."
+      ],
+      "relative_strength_note": "Aktuální corpus říká, že HowlOps proti tomuto produktu zatím spíš dohání šíři, hloubku nebo trust vrstvu.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Resolve add-on má veřejně oddělené ceny: Hobby $0, Starter $12/month, Team $39/month, Enterprise custom.",
+        "Detect: Hobby $0, Starter $24/month, Team $64/month, Enterprise custom",
+        "Communicate: Hobby $0, Starter $9/month, Team $30/month, Enterprise custom",
+        "Resolve: Hobby $0, Starter $12/month, Team $39/month, Enterprise custom",
+        "Agentic Checks jsou veřejně produktizované: Starter i Team mají 1 included, další check stojí $32 / mo per check, regiony jsou Up to 3 a frekvence 5 Min.; enterprise je custom."
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Resolve add-on má veřejně oddělené ceny: Hobby $0, Starter $12/month, Team $39/month, Enterprise custom.). Dokud HowlOps proti této třídě produktu neuzavře hlavní gapy, je bezpečnější prodávat úzký pilot / team use case než se tvářit jako plná náhrada.",
+      "shipped_surface_excerpt": "distributed prober fleet, Prober token, self-registration, prober config polling, batch submit výsledků, heartbeat",
+      "latest_research_file": "2026-07-13_21_checkly-revalidation-vs-howlops.md"
+    },
+    "cronitor": {
+      "slug": "cronitor",
+      "title": "Cronitor",
+      "description": "",
+      "last_checked": "2026-07-21T22:46:27Z",
+      "last_commit_date": "2026-07-22",
+      "last_commit_subject": "docs: revalidate cronitor vs howlops",
+      "verdict": "Stejný.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "crontab discovery/import",
+        "schedule sync",
+        "exec wrapper",
+        "širší terminálový read workflow",
+        "explicitní metrics dimenzionální read-model typu metrics + aggregates"
+      ],
+      "what_changed": [
+        "Na main není nový shipped posun v Cronitor-relevantní vrstvě.",
+        "HowlOps CLI je veřejně reálné, ale také veřejně přiznaně minimální.",
+        "origin/js/fab-2 nepřináší téměř-shipped odpověď na hlavní mezeru."
+      ],
+      "priority_for_howlops": [
+        "Pokud se v dalších bězích objeví skutečný cron importer, exec wrapper nebo výrazně bohatší veřejný analytics read-model, je potřeba Cronitor znovu přehodnotit prioritně.",
+        "Jinak je produkt pro tento pass znovu dostatečně uzavřený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Enterprise je uvedené jako From $6000/year.",
+        "Enterprise je veřejně uvedené jako From $6000/year.",
+        "Business je veřejně popsán jako Monitors $2/month + Users $5/month; Enterprise jako From $6000/year.",
+        "Enterprise je From $6000/year a pravděpodobně dává smysl tam, kde tým potřebuje vlastní invoicing nebo custom arrangements, ale detailní API-specific enterprise odlišnosti jsou neověřené.",
+        "Enterprise začíná na From $6000/year a doplňuje Custom features, Custom integrations, Dedicated engineer, Priority support a Flexible invoice billing."
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Enterprise je uvedené jako From $6000/year.). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "POST /api/v1/hb/{slug}, interval i cron expression + IANA timezone, GET /api/v1/analytics, GET /api/v1/analytics/monitor-breakdown, GET /api/v1/analytics/sla-report, hwl",
+      "latest_research_file": "2026-07-21_22_cronitor-revalidation-vs-howlops.md"
+    },
+    "dead-mans-snitch": {
+      "slug": "dead-mans-snitch",
+      "title": "Dead Man's Snitch",
+      "description": "",
+      "last_checked": "2026-07-22T11:05:58Z",
+      "last_commit_date": "2026-07-22",
+      "last_commit_subject": "docs: revalidate dead-mans-snitch vs howlops",
+      "verdict": "No compact verdict extracted yet.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Current corpus did not extract a compact missing list yet."
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "V tuto chvíli bez dalších lokálně podložených high-value oblastí; pro tuto restartovanou rotaci je produkt znovu považovaný za uzavřený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Little Birdy za $5 monthly: 3 Snitches, Basic Intervals, API, Field Agent, Unlimited Team Members.",
+        "Private Eye za $19 monthly: 100 Snitches, Enhanced Intervals, API, Field Agent, Unlimited Team Members, Integrations.",
+        "Surveillance Van za $49 monthly: 300 Snitches, Enhanced Intervals, API, Field Agent, Unlimited Team Members, Integrations, Smart Alerts, Error Notices.",
+        "Little Birdy stojí $5 monthly a zahrnuje 3 Snitches, Basic Intervals, API, Field Agent a Unlimited Team Members.",
+        "Private Eye stojí $19 monthly a zahrnuje 100 Snitches, Enhanced Intervals, API, Field Agent, Unlimited Team Members a Integrations."
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Little Birdy za $5 monthly: 3 Snitches, Basic Intervals, API, Field Agent, Unlimited Team Members.). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "",
+      "latest_research_file": null
+    },
+    "dynatrace": {
+      "slug": "dynatrace",
+      "title": "Dynatrace",
+      "description": "",
+      "last_checked": "2026-07-22T02:51:56Z",
+      "last_commit_date": "2026-07-22",
+      "last_commit_subject": "docs: revalidate dynatrace vs howlops",
+      "verdict": "Stejný až částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "jednotný Grail-style data plane",
+        "DQL-style query vrstva",
+        "Smartscape / Problem graph",
+        "workflow builder s draft/live lifecycle, approval kroky a execution monitoringem",
+        "first-class correlation model nad deployments, code changes a configuration"
+      ],
+      "what_changed": [
+        "Shipped service-aware základ je reálný, ale dnes už ne novější.",
+        "Jediný čerstvý branchový pohyb jde hlavně do economics/debug explainability.",
+        "Hlavní mezera zůstává beze změny."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukázala další vysoce hodnotná lokálně doložitelná oblast, která by měnila prioritu závěrů; produkt je pro aktuální pass považovaný za uzavřený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "business service katalog, blast-radius, /api/v1/services/*, /api/v1/monitors/{id}/dependencies, /api/v1/monitors/{id}/slo, declare-major",
+      "latest_research_file": "2026-07-22_02_dynatrace-revalidation-vs-howlops.md"
+    },
+    "firehydrant": {
+      "slug": "firehydrant",
+      "title": "FireHydrant",
+      "description": "",
+      "last_checked": "2026-07-24T10:46:11Z",
+      "last_commit_date": "2026-07-24",
+      "last_commit_subject": "docs: revalidate firehydrant vs howlops",
+      "verdict": "Částečně lepší, ale FireHydrant zůstává před HowlOps v change-aware a incident-native orchestration vrstvě.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "first-class change event objekt, GitHub/Kubernetes change correlation do incident contextu, lifecycle-aware runbook engine, jeden incident-native comms model spojující internal/external pages, maintenance a update templates"
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "Vysokohodnotný veřejně doložitelný backlog je po tomto běhu považovaný za vyčerpaný.",
+        "community-sentiment-and-positioning-signals má smysl jen při budoucím návratu, pokud půjde vytěžit výrazně lepší a důvěryhodnější veřejnou zpětnou vazbu než dnes."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "public status pages, custom domain, email subscriptions, subscriber export, public incident updates, maintenance banner, recurring maintenance, end-now, maintenance notify_subscribers / notify_channels / suppress_alerts, publishable postmortems, password-gated public postmortems, postmortem action-items, business service katalog s runbook_url a blast radius",
+      "latest_research_file": "2026-07-19_21_firehydrant-revalidation-vs-howlops.md"
+    },
+    "goalert": {
+      "slug": "goalert",
+      "title": "GoAlert",
+      "description": "",
+      "last_checked": "2026-07-24T08:27:07Z",
+      "last_commit_date": "2026-07-24",
+      "last_commit_subject": "docs: revalidate goalert vs howlops",
+      "verdict": "Stejný až mírně horší pro HowlOps.",
+      "verdict_category": "weaker",
+      "where_howlops_lags": [
+        "GoAlert-style programmable ingress editor",
+        "stejně stručná explainability responder modelu"
+      ],
+      "what_changed": [
+        "Osobní paging ladder na main už nelze popisovat jako prakticky uzavřený.",
+        "Coverage vrstva v HowlOps zůstává silná, ale nemění hlavní responder verdict.",
+        "Ingress se proti GoAlertu neposunul do programmable vrstvy."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu už nezůstává další vysokohodnotná změna, která by pravděpodobně převrátila konkurenční závěr bez nového výrazného veřejného signálu na straně GoAlertu nebo HowlOps.",
+        "Návrat dává smysl hlavně pokud se Universal Integration Keys přesunou ze stavu experimental do stabilní veřejné nabídky, nebo pokud HowlOps veřejně dovysvětlí a produktově uzavře integration-incident / programmable-ingress story.",
+        "GoAlert je po tomto běhu v revalidation passu považovaný za dokončený."
+      ],
+      "relative_strength_note": "Aktuální corpus říká, že HowlOps proti tomuto produktu zatím spíš dohání šíři, hloubku nebo trust vrstvu.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "heartbeaty s cron/timezone a 365denní historií, temporary schedules, swap requests, handoff summary, tokenizovaný iCal, Alertmanager + token-scoped inbound integrations",
+      "latest_research_file": "2026-07-24_08_goalert-revalidation-vs-howlops.md"
+    },
+    "grafana-irm": {
+      "slug": "grafana-irm",
+      "title": "Grafana IRM",
+      "description": "",
+      "last_checked": "2026-07-20T09:41:11Z",
+      "last_commit_date": "2026-07-20",
+      "last_commit_subject": "docs: revalidate grafana-irm vs howlops",
+      "verdict": "Částečně lepší, ale pořád slabší ve Slack-native execution a incident-native AI workflow.",
+      "verdict_category": "weaker",
+      "where_howlops_lags": [
+        "Grafana-style declare incident, status update add, emoji-to-artifact, lifecycle incident kanálů, participant model s invitation statusy, task bridge do GitHub / Jira, incident-native AI investigation / auto-summary workflow"
+      ],
+      "what_changed": [
+        "HowlOps main už není poctivé rámovat jako tenký incident shell.",
+        "Nejdůležitější nový posun je branchový: lepší Slack ergonomie a šablonované incident updates.",
+        "Grafana dál drží jasný náskok ve Slack-native orchestration a AI vrstvě."
+      ],
+      "priority_for_howlops": [
+        "Z veřejně dosažitelných a vysoce hodnotných lokálních zdrojů se backlog pro Grafana IRM v této rotaci jeví jako prakticky vyčerpaný."
+      ],
+      "relative_strength_note": "Aktuální corpus říká, že HowlOps proti tomuto produktu zatím spíš dohání šíři, hloubku nebo trust vrstvu.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Veřejná pricing page uvádí Free Always free $0 a zároveň pro IRM konkrétně limit 3 active IRM users per month. To působí jako skutečný malý provozní tier, ne jen krátkodobá trial vrstva."
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Veřejná pricing page uvádí Free Always free $0 a zároveň pro IRM konkrétně limit 3 active IRM users per month. To působí jako skutečný malý provozní tier, ne jen krátkodobá trial vrstva.). Dokud HowlOps proti této třídě produktu neuzavře hlavní gapy, je bezpečnější prodávat úzký pilot / team use case než se tvářit jako plná náhrada.",
+      "shipped_surface_excerpt": "war room, publishable postmortems s action items a derived timeline, business service + blast-radius, incident comments + updates, hostovaný MCP, webhook-first Slack, Add to Slack OAuth, /howlops status|ack|resolve, Slack buttons ack_incident / resolve_incident",
+      "latest_research_file": "2026-07-20_09_grafana-irm-revalidation-vs-howlops.md"
+    },
+    "healthchecks-io": {
+      "slug": "healthchecks-io",
+      "title": "Healthchecks.io",
+      "description": "",
+      "last_checked": "2026-07-22T15:12:39Z",
+      "last_commit_date": "2026-07-22",
+      "last_commit_subject": "docs: revalidate healthchecks-io vs howlops",
+      "verdict": "Spíš horší v úzkém cron/job use-casu, lepší jen v širší okolní platformě.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "start / fail / /{exit-status}",
+        "rid",
+        "/log",
+        "first-class Prometheus export vlastního heartbeat stavu",
+        "stejně poctivý cron troubleshooting kontrakt"
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "Pro tento restartovaný revalidation pass je produkt znovu uzavřený; případný další budoucí běh má smysl hlavně tehdy, pokud se rotate-slug / heartbeat docs cleanup dostanou na main nebo pokud HowlOps přidá explicitní cron lifecycle (start / fail / rid / /log)."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "GET|POST|HEAD /api/v1/hb/{slug}, interval + grace_s, cron expressions, IANA timezone, heartbeat detail + ping history, heartbeat.ping_received",
+      "latest_research_file": "2026-07-22_15_healthchecks-io-revalidation-vs-howlops.md"
+    },
+    "hlidam-to": {
+      "slug": "hlidam-to",
+      "title": "hlidam.to",
+      "description": "",
+      "last_checked": "2026-07-23T07:41:33Z",
+      "last_commit_date": "2026-07-23",
+      "last_commit_subject": "docs: revalidate hlidam-to vs howlops",
+      "verdict": "Lepší pro HowlOps, ale bez nového shipped posunu.",
+      "verdict_category": "stronger",
+      "where_howlops_lags": [
+        "stejně stručný public pricing/trust výklad jako u hlidam.to",
+        "veřejně doložený Email monitoring jako samostatný check typ",
+        "branchový reporting/import work zatím není shipped"
+      ],
+      "what_changed": [
+        "Výhoda HowlOps je stále reálná, ale už ne čerstvě narostlá.",
+        "Nejdůležitější změna je branchová a spíš negativně-korekční.",
+        "Hlavní lekce od hlidam.to je dnes komunikační, ne produktová."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukazuje další vysoce hodnotná lokální revalidation práce, která by měnila hlavní závěr vůči HowlOps."
+      ],
+      "relative_strength_note": "Aktuální corpus naznačuje, že HowlOps je proti tomuto produktu přesvědčivější v užším prodávaném use case.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "HTTP / ping / SSL expiry / heartbeat / screenshot monitoring, multi-region probing, public status pages, custom domain, subscriber email flow, badge.svg",
+      "latest_research_file": "2026-07-23_07_hlidam-to-revalidation-vs-howlops.md"
+    },
+    "hund-io": {
+      "slug": "hund-io",
+      "title": "Hund.io",
+      "description": "",
+      "last_checked": "2026-07-22T23:25:07Z",
+      "last_commit_date": "2026-07-23",
+      "last_commit_subject": "docs: revalidate hund-io vs howlops",
+      "verdict": "Stejný až jen částečně lepší pro HowlOps, ale bez nového shipped posunu.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "veřejně doložený multi-channel self-serve subscriber model mimo email",
+        "stejně čistě vysvětlená private/audience governance",
+        "public důkaz pro multi-page sdílené komponenty, SSE-style live event stream a semantic override / metrics vocabulary typu Hund.io"
+      ],
+      "what_changed": [
+        "V tomto běhu se nepotvrdil nový Hund.io-relevantní shipped posun na main.",
+        "Nejdůležitější změna je dnes branchová: relevantní zůstal už jen origin/js/fab-2, ale pro Hund.io je teď skoro okrajový.",
+        "Trust mismatch kolem password protection zůstává a dál oslabuje status-page story."
+      ],
+      "priority_for_howlops": [
+        "Žádné další vysoce hodnotné veřejně zdokumentovatelné oblasti se po tomto průchodu nejeví jako nutné pro další kolo."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Components nad free allotment se účtují po blocích (First 40 $29/pack, Next 40 $25/pack, Greater than 80 $20/pack);"
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Components nad free allotment se účtují po blocích (First 40 $29/pack, Next 40 $25/pack, Greater than 80 $20/pack);). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "public status pages, GET /api/v1/public/status-pages/{slug}, POST /api/v1/public/status-pages/{slug}/subscribe, badge.svg, rss.xml, embed widget",
+      "latest_research_file": "2026-07-22_23_hund-io-revalidation-vs-howlops.md"
+    },
+    "hyperping": {
+      "slug": "hyperping",
+      "title": "HyperPing",
+      "description": "",
+      "last_checked": "2026-07-20T22:03:14Z",
+      "last_commit_date": "2026-07-21",
+      "last_commit_subject": "docs: revalidate hyperping vs howlops",
+      "verdict": "Stejný až mírně horší v trust clarity.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Slack / Microsoft Teams / SMS subscriber delivery",
+        "email access codes",
+        "Google SSO",
+        "reusable SAML SSO page connections",
+        "kompaktní MCP safety story"
+      ],
+      "what_changed": [
+        "MCP je v HowlOps dál reálný, ale guardrail story je pořád slabší než u HyperPingu.",
+        "Maintenance + reporting zůstávají solidní foundation, ale bez nového shipped pohybu.",
+        "Starý status-page trust framing bylo potřeba opravit."
+      ],
+      "priority_for_howlops": [
+        "Slack / Microsoft Teams / SMS subscriber delivery",
+        "email access codes",
+        "Google SSO",
+        "reusable SAML SSO page connections",
+        "kompaktní MCP safety story"
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Důležitý trust caveat: MakerStack ve stejném review uvádí starší pricing (from $9/mo, free for 5 monitors), který už nekoresponduje s aktuální oficiální pricing stránkou (Free s 20 monitors, Essentials od 24 USD/mo). Samotný hodnotící komentář je použitelný, ale pricing část toho review je pro dnešní stav zjevně zastaralá.",
+        "Free je skutečný trvalý plán ($0 /forever), ne jen trial,"
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Důležitý trust caveat: MakerStack ve stejném review uvádí starší pricing (from $9/mo, free for 5 monitors), který už nekoresponduje s aktuální oficiální pricing stránkou (Free s 20 monitors, Essentials od 24 USD/mo). Samotný hodnotící komentář je použitelný, ale pricing část toho review je pro dnešní stav zjevně zastaralá.). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "hosted MCP, recurring maintenance windows, SLA report CSV export, status pages s email subscriptions, custom domain a password / private access modelem",
+      "latest_research_file": "2026-07-20_22_hyperping-revalidation-vs-howlops.md"
+    },
+    "ilert": {
+      "slug": "ilert",
+      "title": "ilert",
+      "description": "",
+      "last_checked": "2026-07-09T18:44:07Z",
+      "last_commit_date": "2026-07-09",
+      "last_commit_subject": "docs: revalidate ilert vs howlops",
+      "verdict": "Částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "ilert-style AI status update generation, AI postmortem generation nad incident/transcript vstupy, širší SRE Agent execution surface, inbound Call Routing 2.0 builder, AI Voice Agent intake, first-class deployment-event correlation a stejně disciplinovaně popsaný agentický trust kontrakt"
+      ],
+      "what_changed": [
+        "HowlOps už nemá nulový MCP/agentický příběh.",
+        "Incident/postmortem/service-aware základ v HowlOps je silnější, než naznačoval červnový text.",
+        "Voice story v HowlOps je reálná, ale pořád outbound-only."
+      ],
+      "priority_for_howlops": [
+        "Žádné. Produkt je po tomto běhu považovaný za dostatečně vyčerpaný z veřejně dohledatelných zdrojů."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "hostovaný MCP endpoint + lokální MCP binárka, heartbeats včetně cron/timezone modelu, publishable postmortems + postmortem/draft + public read path, business service katalog + blast-radius, veřejná status-page / maintenance vrstva, SMS a Voice paging s interaktivním hlasovým ovládáním, phone verification přes Twilio Voice, inbound Prometheus Alertmanager / Grafana / Datadog / AWS CloudWatch / generic webhook",
+      "latest_research_file": "2026-07-09_18_ilert-revalidation-vs-howlops.md"
+    },
+    "incident-io": {
+      "slug": "incident-io",
+      "title": "incident.io",
+      "description": "",
+      "last_checked": "2026-07-19T17:05:21Z",
+      "last_commit_date": "2026-07-19",
+      "last_commit_subject": "docs: revalidate incident-io vs howlops",
+      "verdict": "Částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "private incidents jako first-class objekt s membership visibility chain, pravidlo paged user gets access, explicitní public/private delivery guardraily, sandbox environment, real-time collaborative postmortem editor, inline document comments, syncované incident-native bloky a více postmortem dokumentů na incident"
+      ],
+      "what_changed": [
+        "HowlOps už není poctivé rámovat jako produkt jen se základní RBAC kostrou.",
+        "HowlOps už má skutečnou shipped incident collaboration vrstvu, jen ne ve formě incident.io editoru.",
+        "Branch kontext nepřináší poctivý důkaz, že hlavní incident.io mezery jsou těsně před uzavřením."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu už nezůstává další vysokohodnotná změna, která by pravděpodobně převrátila konkurenční závěr bez nového výrazného veřejného signálu na straně incident.io nebo HowlOps.",
+        "Návrat dává smysl hlavně pokud HowlOps shipped uzavře private incidents / governance story, collaborative postmortem workflow nebo incident-native AI assistenci, případně pokud incident.io výrazně změní pricing či veřejnou dokumentaci.",
+        "incident.io je po tomto revalidation běhu považované za dokončené."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "major incidents, war room, incident comments, unified internal/public incident update feed, responders, postmortem auto-draft, draft/private/public, action items, public postmortem endpoint + status-page linkage, private-team isolation přes team scope, SAML SSO, OIDC, SCIM, recurring maintenance windows, scheduled maintenance na status pages, AI Heartbeats",
+      "latest_research_file": "2026-07-19_17_incident-io-revalidation-vs-howlops.md"
+    },
+    "instatus": {
+      "slug": "instatus",
+      "title": "Instatus",
+      "description": "",
+      "last_checked": "2026-07-20T05:31:46Z",
+      "last_commit_date": "2026-07-20",
+      "last_commit_subject": "docs: revalidate instatus vs howlops",
+      "verdict": "Částečně lepší, ale Instatus dál vede.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Select Audience, Audience Groups, multi-channel status-page subscribers (SMS, Webhook, Slack, Teams, Discord, Google Chat, Zendesk), summary.json-style public-data contract, imported metrics / 3rd party components, Slack-native incident workflow"
+      ],
+      "what_changed": [
+        "HowlOps už nemá jen basic public page.",
+        "Recurring maintenance je v HowlOps už shipped realita.",
+        "Největší současný problém HowlOps je trust/positioning mismatch, ne jen feature gap."
+      ],
+      "priority_for_howlops": [
+        "Z veřejně dostupných oficiálních zdrojů se backlog po tomto běhu jeví jako prakticky vyčerpaný.",
+        "Pokud se v budoucnu objeví nové veřejné docs nebo výraznější changelog entries, dává smysl ověřit hlavně novou AI / mobile / enterprise governance surface, pokud ji Instatus veřejně zpřesní."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "public|password|private status-page access, email subscribers s admin správou, custom domain, custom CSS, badge.svg, rss.xml, iframe embed, public incident updates, publishable postmortems, on-call schedules / escalation policies / routing, one-time i recurring maintenance (daily / weekly / monthly)",
+      "latest_research_file": "2026-07-20_05_instatus-revalidation-vs-howlops.md"
+    },
+    "jira-service-management": {
+      "slug": "jira-service-management",
+      "title": "Jira Service Management",
+      "description": "",
+      "last_checked": "2026-07-09T10:28:44Z",
+      "last_commit_date": "2026-07-09",
+      "last_commit_subject": "docs: revalidate jira-service-management vs howlops",
+      "verdict": "Částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "veřejně koherentní Assets / Compass-style service workflow, incident-native affected services narrative, request approvals jako obecná workflow primitive, change calendar, GitHub deployment gating a stejně disciplinovaný migration playbook napříč celým operations modelem"
+      ],
+      "what_changed": [
+        "HowlOps už má skutečný business service backend na main.",
+        "Migration/trust příběh se v HowlOps zlepšuje, ale zatím hlavně mimo main.",
+        "Safe-change governance mezera proti Jira Service Management zůstává."
+      ],
+      "priority_for_howlops": [
+        "Z veřejně dosažitelných a vysoce hodnotných zdrojů se backlog pro Jira Service Management v této rotaci jeví jako prakticky vyčerpaný.",
+        "Případné další průchody by už pravděpodobně šly spíš do nízkohodnotných okrajů nebo do Customer Service Management jako samostatnější produktové vrstvy, ne do dalšího jasně oddělitelného jádra Jira Service Management."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "business_services + business_service_monitors, /api/v1/services CRUD, monitor attach/detach, blast-radius, SAML / OIDC / SCIM, major incidents, postmortem workflow, status pages, on-call schedules / swaps / temporary coverage",
+      "latest_research_file": "2026-07-09_10_jira-service-management-revalidation-vs-howlops.md"
+    },
+    "monitoringdostupnosti-cz": {
+      "slug": "monitoringdostupnosti-cz",
+      "title": "monitoringdostupnosti.cz",
+      "description": "",
+      "last_checked": "2026-07-23T03:30:58Z",
+      "last_commit_date": "2026-07-23",
+      "last_commit_subject": "docs: revalidate monitoringdostupnosti-cz vs howlops",
+      "verdict": "Lepší pro HowlOps, ale bez nového shipped posunu od minulého revalidation běhu.",
+      "verdict_category": "stronger",
+      "where_howlops_lags": [
+        "stejně stručná první minuta produktu",
+        "plně sjednocená buyer-facing docs/pricing truth",
+        "monitoring-first positioning bez širší capability kognitivní zátěže"
+      ],
+      "what_changed": [
+        "Žádný nový shipped posun proti běhu z 2026-07-13.",
+        "Aktuální branch kontext už pro tento competitor skoro nic neřeší.",
+        "Hlavní lekce zůstává buyer-facing clarity."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukazuje další vysoce hodnotná lokální práce, která by proti monitoringdostupnosti.cz měnila hlavní produktový závěr; pokud se HowlOps výrazně neposune v buyer-facing clarity nebo monitor taxonomy, jde spíš o maintenance položku."
+      ],
+      "relative_strength_note": "Aktuální corpus naznačuje, že HowlOps je proti tomuto produktu přesvědčivější v užším prodávaném use case.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "GET /api/v1/monitors, GET /api/v1/heartbeats, GET/POST/HEAD /api/v1/hb/{slug}, GET /api/v1/public/tiers, GET /api/v1/public/status-pages/{slug}, GET /api/v1/public/status-pages/{slug}/badge.svg",
+      "latest_research_file": "2026-07-23_03_monitoringdostupnosti-cz-revalidation-vs-howlops.md"
+    },
+    "opsgenie": {
+      "slug": "opsgenie",
+      "title": "Opsgenie",
+      "description": "",
+      "last_checked": "2026-07-20T01:22:56Z",
+      "last_commit_date": "2026-07-20",
+      "last_commit_subject": "docs: revalidate opsgenie vs howlops",
+      "verdict": "Částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "service-aware subscriptions podle konkrétních služeb, audience segmentation, first-class nativní mobilní app story, stejně disciplinovaný per-feature migration playbook a nativní Alertmanager receiver experience"
+      ],
+      "what_changed": [
+        "HowlOps už má skutečný subscriber/admin lifecycle pro veřejnou komunikaci.",
+        "Mobile/paging trust v HowlOps je dnes veřejně čitelnější.",
+        "Proti Opsgenie dál nejde hlavně o existenci ingestu, ale o jeho explainability."
+      ],
+      "priority_for_howlops": [
+        "Vysokohodnotný veřejně doložitelný backlog je po tomto běhu považovaný za vyčerpaný.",
+        "Pokud se ke Opsgenie bude vracet další běh, dává smysl už jen při novém posunu v HowlOps kolem service-aware audience modelu, nativní mobilní responder story nebo migration docs."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Free: $0, do 5 uživatelů,",
+        "Free: $0, up to 5 users, positioning Basic Alerting and On-Call Management for Small Teams."
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Free: $0, do 5 uživatelů,). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "public status-page subscriptions s double opt-in, admin subscriber ops (CSV, delete), maintenance/incident subscriber email fan-out, public incident updates, publishable postmortem navázaný na status page, push token API, APNs / FCM, veřejně zdokumentované SMS / voice paging, inbound Prometheus Alertmanager webhook s token auth",
+      "latest_research_file": "2026-07-09_06_opsgenie-revalidation-vs-howlops.md"
+    },
+    "pagerduty": {
+      "slug": "pagerduty",
+      "title": "PagerDuty",
+      "description": "",
+      "last_checked": "2026-07-24T04:18:47Z",
+      "last_commit_date": "2026-07-24",
+      "last_commit_subject": "docs: revalidate pagerduty vs howlops",
+      "verdict": "Stejný v shipped realitě, částečně lepší jen v in-progress delivery trust vrstvě.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "shipped incident workflow builder",
+        "shipped recurring operational review cadence",
+        "shipped maturity scorecard a leadership review systém"
+      ],
+      "what_changed": [
+        "Na main nepřibyl nový shipped průlom.",
+        "Branch kontext je teď poctivější číst jako delivery hardening, ne jako governance momentum.",
+        "Dopad proti PagerDuty je reálný, ale omezený."
+      ],
+      "priority_for_howlops": [
+        "shipped incident workflow builder",
+        "shipped recurring operational review cadence",
+        "shipped maturity scorecard a leadership review systém"
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "Reports & analytics, SLA export, Daily digest, status-page incident-response panel, admin Platform Alerts, major incidents, war room, postmortems, SAML / OIDC / SCIM, on-call coverage primitives",
+      "latest_research_file": "2026-07-24_04_pagerduty-revalidation-vs-howlops.md"
+    },
+    "pingdom": {
+      "slug": "pingdom",
+      "title": "Pingdom",
+      "description": "",
+      "last_checked": "2026-07-21T06:14:42Z",
+      "last_commit_date": "2026-07-21",
+      "last_commit_subject": "docs: revalidate pingdom vs howlops",
+      "verdict": "Částečně lepší, ale bez nového posunu.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Transaction Monitoring recorder/editor workflow, Page Speed analytics s waterfall / filmstrip, oddělený RUM model"
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "V tomto okamžiku už z lokálních snapshotů nevyplývá další vysoce hodnotná oblast pro samostatný revalidation průchod; produkt je pro tento pass považovaný za dostatečně zpřesněný."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "public status pages s custom domain, double opt-in subscriptions, GET /api/v1/analytics/sla-report, multi-region probing, screenshot capture přes prober-screenshot, SAML / OIDC / SCIM / MFA",
+      "latest_research_file": "2026-07-21_06_pingdom-revalidation-vs-howlops.md"
+    },
+    "rootly": {
+      "slug": "rootly",
+      "title": "Rootly",
+      "description": "",
+      "last_checked": "2026-07-11T16:12:41Z",
+      "last_commit_date": "2026-07-11",
+      "last_commit_subject": "docs: revalidate rootly vs howlops",
+      "verdict": "Částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Slack-native incident creation modal, message-based declaration, auto-created incident channel, private incident governance přímo v chat flow, process-based retrospectives s ownery/due dates/reminders, collaborative editor, AI blocks, obecnější Catalogs / reference-property model a veřejně doložené importy typu PagerDuty / Opsgenie"
+      ],
+      "what_changed": [
+        "HowlOps už má skutečný shipped service-aware základ.",
+        "HowlOps už má silnější status-page trust vrstvu, než naznačoval červnový text.",
+        "Největší mezera proti Rootly zůstává v command a learning loop vrstvě."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukázala další vysoce hodnotná lokálně doložitelná oblast, která by měnila prioritu závěrů; produkt je pro aktuální pass považovaný za uzavřený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "business service katalog + blast radius, public status pages s custom domain, password protection, subscriber e-maily a component-scoped broadcast, war room, public/private/password-gated postmortems a action items",
+      "latest_research_file": "2026-07-11_16_rootly-revalidation-vs-howlops.md"
+    },
+    "site24x7": {
+      "slug": "site24x7",
+      "title": "Site24x7",
+      "description": "",
+      "last_checked": "2026-07-22T06:57:29Z",
+      "last_commit_date": "2026-07-22",
+      "last_commit_subject": "docs: revalidate site24x7 vs howlops",
+      "verdict": "Stejný až jen částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "RUM",
+        "Web Vitals",
+        "Session Replay",
+        "UX frustration eventy",
+        "Mobile RUM / Mobile APM",
+        "Problems / root-cause artifact layer"
+      ],
+      "what_changed": [
+        "Na main nepřibyl nový shipped digital-experience posun; hlavní zpřesnění je trust framing.",
+        "origin/js/fab-2 nově nese smysluplný in-progress signál pro private status-page guardraily.",
+        "Hlavní mezera proti Site24x7 zůstává stejná."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukázala další vysoce hodnotná lokálně doložitelná oblast, která by měnila prioritu závěrů; produkt je pro aktuální pass považovaný za uzavřený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Enterprise Plus Web add-ons veřejně ukazují 500 Monitors za $275, 25 Advanced Monitors za $200, 100 Monitors za $600, 500K Page views za $24 a 5M Page views za $124;",
+        "Enterprise Plus Web veřejně uvádí $999/month a $899/month paid annually.",
+        "Enterprise Plus Web: $999/month nebo $899/month při roční platbě."
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Enterprise Plus Web add-ons veřejně ukazují 500 Monitors za $275, 25 Advanced Monitors za $200, 100 Monitors za $600, 500K Page views za $24 a 5M Page views za $124;). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "public status pages, custom domain, access_level public|password|private, email subscriptions, scheduled maintenance, business service katalog",
+      "latest_research_file": "2026-07-12_04_site24x7-revalidation-vs-howlops.md"
+    },
+    "squadcast": {
+      "slug": "squadcast",
+      "title": "Squadcast",
+      "description": "",
+      "last_checked": "2026-07-20T13:47:18Z",
+      "last_commit_date": "2026-07-20",
+      "last_commit_subject": "docs: revalidate squadcast vs howlops",
+      "verdict": "Stejný vůči minulému revalidation, celkově jen částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "service-to-service dependency graph",
+        "dependency-based deduplication",
+        "SLO Tracker nad více Services / SLIs",
+        "Error Budget Policy",
+        "false-positive workflow",
+        "incident creation z chatu"
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "service-to-service dependency graph",
+        "dependency-based deduplication",
+        "SLO Tracker nad více Services / SLIs",
+        "Error Budget Policy",
+        "false-positive workflow"
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "cenové body se v HTML objevují v několika render variantách (Pro $12/$15/$20, Premium $19/$24/$29, Enterprise $26/$29 / Let's Chat), takže přesný aktivní billing toggle v jedné statické extrakci není úplně čistý.",
+        "cenové body se v HTML objevují mimo jiné jako Free, Pro, Premium, Enterprise a v jednom pricing bloku také Pro $12, Premium $19, Enterprise $26 za uživatele / měsíc (pravděpodobně annual billing view),",
+        "v jiném bloku se objevují také vyšší body Pro $15, Premium $24, Enterprise $29 a starší/alternativní render Pro $20, Premium $29; přesný aktuální billing toggle v jedné textové extrakci proto není úplně čistý.",
+        "samostatné plan karty ukazovaly Pro za $20 per user / month a Premium za $29 per user / month; Enterprise je zde Let's Chat,",
+        "ve srovnávací pricing matici se paralelně objevují i hodnoty Pro $12, Premium $19, Enterprise $26."
+      ],
+      "public_revenue_signals": [
+        "To dělá z Live Call Routing víc než jen další notifikační kanál. Je to samostatná customer / employee ingress vrstva napojená na on-call execution model.",
+        "komerčně je pozicovaný jako rozšíření pro týmy, které řeší přímý customer/employee reporting přes telefon."
+      ],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (cenové body se v HTML objevují v několika render variantách (Pro $12/$15/$20, Premium $19/$24/$29, Enterprise $26/$29 / Let's Chat), takže přesný aktivní billing toggle v jedné statické extrakci není úplně čistý.). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "business service katalog + blast radius, monitor dependency CRUD, monitor-level SLO API/UI s error budgetem a burn rate, Slack /howlops status|ack|resolve, outbound Microsoft Teams / Google Chat",
+      "latest_research_file": "2026-07-20_13_squadcast-revalidation-vs-howlops.md"
+    },
+    "status-cake": {
+      "slug": "status-cake",
+      "title": "Status Cake",
+      "description": "",
+      "last_checked": "2026-07-21T02:09:39Z",
+      "last_commit_date": "2026-07-21",
+      "last_commit_subject": "docs: revalidate status-cake vs howlops",
+      "verdict": "Částečně lepší, ale bez nového posunu oproti minulému běhu.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "veřejně doložený multi-channel status-page subscriber model Email + SMS + Webhook",
+        "stakeholder-facing scheduled reporty s recipient subsety",
+        "status page jako public aggregation surface pro cizí source systémy"
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "V tomto okamžiku už z lokálních snapshotů nevyplývá další vysoce hodnotná oblast pro samostatný revalidation průchod; produkt je pro tento pass považovaný za dostatečně zpřesněný."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "public status pages s custom domain, automatickým HTTPS, email subscriptions s double opt-in, RSS, recurring maintenance windows se suppression semantikou, SLA CSV export, account-wide export, workspace-level daily digest",
+      "latest_research_file": "2026-07-21_02_status-cake-revalidation-vs-howlops.md"
+    },
+    "status-io": {
+      "slug": "status-io",
+      "title": "Status.io",
+      "description": "",
+      "last_checked": "2026-07-21T10:23:11Z",
+      "last_commit_date": "2026-07-21",
+      "last_commit_subject": "docs: revalidate status-io vs howlops",
+      "verdict": "Stejný v shipped realitě, částečně lepší jen v in-progress směru.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Status.io-style public multi-channel subscriber delivery, viewer OIDC / SAML access pro private pages, shipped IP Access Control, čistě vysvětlený owner/break-glass identity model"
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "veřejně vysoce hodnotný backlog je po tomto revalidation běhu považovaný za vyčerpaný"
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [
+        "employee access controls,",
+        "security page pro infrastrukturu, šifrování, backupy a employee controls,"
+      ],
+      "howlops_price_potential": "V corpus jsou komerční nebo revenue signály, ale bez dost přesných veřejných cenových anchorů pro poctivý exact pricing návrh. Vhodnější je zatím pilot/team positioning.",
+      "shipped_surface_excerpt": "custom domain, public|password|private status page access, email subscriptions s double opt-in, admin subscriber export/delete, component-scoped delivery přes component_id, rss.xml, badge.svg, embed, public incident updates, scheduled maintenance, MFA, SAML, OIDC, SCIM",
+      "latest_research_file": "2026-07-21_10_status-io-revalidation-vs-howlops.md"
+    },
+    "statuscast": {
+      "slug": "statuscast",
+      "title": "StatusCast",
+      "description": "",
+      "last_checked": "2026-07-23T15:56:07Z",
+      "last_commit_date": "2026-07-23",
+      "last_commit_subject": "docs: revalidate statuscast vs howlops",
+      "verdict": "Stejný / bez nového shipped posunu HowlOps.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "page-level / widget-level audience filtering",
+        "hybridní Private Pages with Limited Public View",
+        "subscriber Webhook / SMS / Phone Number / Tags / Timezone",
+        "first-class ContentTemplate objekt na main",
+        "recipient preview",
+        "hierarchický Third Party Status Page / ExternalID component model"
+      ],
+      "what_changed": [
+        "Na main není nový status-page skok; starší shipped základ zůstává platný, ale beze změny.",
+        "Hlavní rozdíl zůstává v audience/modeling vrstvě, ne v existenci customer-facing communication surface.",
+        "Branch origin/js/fab-2 už je relevantní užším a poctivějším způsobem než minule."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukazuje další vysokohodnotná lokální práce, která by bez nového výrazného signálu převrátila hlavní závěr vůči HowlOps.",
+        "Návrat dává smysl hlavně pokud HowlOps shipne jemnější audience segmentation (page-level / widget-level ekvivalent), richer subscriber delivery model nebo hierarchický service/component graph s dependency-style publikací.",
+        "StatusCast je po tomto běhu v revalidation passu považovaný za dokončený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [
+        "Subscription model veřejně rozlišuje role Subscriber a Employee.",
+        "ApiRoleType: Anonymous, Subscriber, Employee, Manager, Administrator",
+        "SubscriptionApiRoleType: Subscriber, Employee",
+        "Každý widget má v layout tabu viditelnost podle role návštěvníka nebo subscriberu; veřejně vypsané role jsou Everyone, Subscriber, Employee, Manager, Administrator a Company Administrator.",
+        "7. Nastaví viditelnost podle role návštěvníka, např. jen pro Employee nebo Subscriber."
+      ],
+      "howlops_price_potential": "V corpus jsou komerční nebo revenue signály, ale bez dost přesných veřejných cenových anchorů pro poctivý exact pricing návrh. Vhodnější je zatím pilot/team positioning.",
+      "shipped_surface_excerpt": "status_pages s access_level public|password|private, custom_domain, badge.svg, rss.xml, scheduled-maintenance, public subscribe flow",
+      "latest_research_file": "2026-07-23_15_statuscast-revalidation-vs-howlops.md"
+    },
+    "statuspage": {
+      "slug": "statuspage",
+      "title": "Atlassian Statuspage",
+      "description": "",
+      "last_checked": "2026-07-24T10:53:31Z",
+      "last_commit_date": "2026-07-24",
+      "last_commit_subject": "docs: revalidate statuspage vs howlops",
+      "verdict": "No compact verdict extracted yet.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Current corpus did not extract a compact missing list yet."
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "Vysokohodnotný veřejně doložitelný backlog je po tomto běhu považovaný za vyčerpaný.",
+        "Pokud se ke Statuspage bude vracet další běh, dává smysl už jen při novém posunu v HowlOps page segmentation nebo subscriber kanálech."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Enterprise — $1,499/month"
+      ],
+      "public_revenue_signals": [
+        "5. Employees řeší přes IDP, zatímco Team Members jsou administrátoři stránky s plným management přístupem.",
+        "Private page je interní employee communications surface.",
+        "private plán počítá authenticated subscribers a employees,",
+        "Employee je člověk, který má stránku vidět a subscribovat k ní, typicky přes IDP,",
+        "Za silný veřejný signál ale považuji samotnou pricing copy: Atlassian investuje do velmi explicitního vysvětlování toho, kdy má smysl private page, co je Employee, co je Team Member, a že audience-specific page má vlastní model. To typicky dělají produkty, kde je page-type packaging zásadní část nákupního rozhodování."
+      ],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Enterprise — $1,499/month). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "",
+      "latest_research_file": null
+    },
+    "statuspal": {
+      "slug": "statuspal",
+      "title": "StatusPal",
+      "description": "",
+      "last_checked": "2026-07-13T01:17:18Z",
+      "last_commit_date": "2026-07-13",
+      "last_commit_subject": "docs: revalidate statuspal vs howlops",
+      "verdict": "Částečně lepší pro HowlOps, ale ne v rozhodujících vrstvách.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "self-serve importer pro Atlassian Statuspage / Status.io",
+        "subscriber portability typu Email and SMS subscriptions",
+        "multi-channel status subscriber model",
+        "subscriber filtry podle služby / incidentu / severity",
+        "inbound PagerDuty / OpsGenie → veřejný status incident bridge",
+        "public status hub / external dependency story"
+      ],
+      "what_changed": [
+        "HowlOps už uzavřel velkou část základního status-page trust rozdílu.",
+        "Největší praktický rozdíl zůstává v migration/import story.",
+        "StatusPal dál vede v subscriber a incident-bridge vrstvě, i když HowlOps mezitím zesílil."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukazuje další vysoce hodnotná lokální revalidation práce, která by měnila hlavní závěr vůči HowlOps."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "public status pages, custom domain, badge.svg, rss.xml, embed widget, public incident updates",
+      "latest_research_file": "2026-07-13_01_statuspal-revalidation-vs-howlops.md"
+    },
+    "taskcall": {
+      "slug": "taskcall",
+      "title": "TaskCall",
+      "description": "",
+      "last_checked": "2026-07-20T17:54:24Z",
+      "last_commit_date": "2026-07-20",
+      "last_commit_subject": "docs: revalidate taskcall vs howlops",
+      "verdict": "Stejný.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Current corpus did not extract a compact missing list yet."
+      ],
+      "what_changed": [],
+      "priority_for_howlops": [
+        "Turn the latest research into a narrower, more truthful buyer-facing story."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "",
+      "latest_research_file": "2026-07-20_17_taskcall-revalidation-vs-howlops.md"
+    },
+    "uptime-com": {
+      "slug": "uptime-com",
+      "title": "Uptime.com",
+      "description": "",
+      "last_checked": "2026-07-13T09:32:10Z",
+      "last_commit_date": "2026-07-13",
+      "last_commit_subject": "docs: revalidate Uptime.com vs howlops",
+      "verdict": "Částečně lepší pro HowlOps.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "shipped RUM / session analytics",
+        "shipped browser-transaction monitoring",
+        "stejně široká monitor taxonomy jako API, Transaction, Page Speed, Group Checks, Private Location Monitoring",
+        "multi-channel status subscriber model typu SMS / Slack / webhook"
+      ],
+      "what_changed": [
+        "HowlOps už nemá proti Uptime.com prázdné místo ve status/reporting foundation.",
+        "Největší zbývající mezera je dnes v monitorovací hloubce, ne v existenci uptime platformy.",
+        "Branch kontext zužuje migration/report/privacy mezeru, ale pořád jen jako in-progress."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukazuje další vysoce hodnotná lokální revalidation práce, která by měnila hlavní závěr vůči HowlOps."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "HTTP / ping / SSL expiry / heartbeat / screenshot monitoring, multi-region probing, public status pages, custom domain, email subscriber flow, badge.svg",
+      "latest_research_file": "2026-07-13_09_uptime-com-revalidation-vs-howlops.md"
+    },
+    "uptime-kuma": {
+      "slug": "uptime-kuma",
+      "title": "Uptime Kuma",
+      "description": "",
+      "last_checked": "2026-07-10T15:22:09Z",
+      "last_commit_date": "2026-07-10",
+      "last_commit_subject": "docs: revalidate uptime-kuma vs howlops",
+      "verdict": "Částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "stejně široká veřejně doložená monitor taxonomy jako DNS, SMTP, MQTT, SNMP, DB, Docker Container, System Service, Kafka nebo Websocket Upgrade",
+        "stejně hackable public heartbeat/status-page data surface",
+        "stejně levný a provozně transparentní self-host value proposition"
+      ],
+      "what_changed": [
+        "HowlOps už proti Uptime Kuma nemá slabou public status-page a trust story.",
+        "Heartbeat + maintenance kontrakt v HowlOps je dnes přesnější než ve starém textu.",
+        "HowlOps už má veřejně popsanější managed multi-region + screenshot story, i když pořád ne tak širokou taxonomy monitorů."
+      ],
+      "priority_for_howlops": [
+        "Žádné další vysoce hodnotné veřejně doložitelné oblasti aktuálně nejsou prioritní; produkt je označen jako dokončený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "public status pages s custom domain, email subscriptions s double opt-in, badge.svg, iframe embedem a password protection, heartbeats s slug ping URL, cron expression, timezone a grace period, recurring maintenance windows, multi-region monitoring, region quorum a incident screenshot workflow",
+      "latest_research_file": "2026-07-10_15_uptime-kuma-revalidation-vs-howlops.md"
+    },
+    "uptimecrow": {
+      "slug": "uptimecrow",
+      "title": "UptimeCrow",
+      "description": "",
+      "last_checked": "2026-07-22T19:18:43Z",
+      "last_commit_date": "2026-07-22",
+      "last_commit_subject": "docs: revalidate uptimecrow vs howlops",
+      "verdict": "Částečně lepší, ale bez nového shipped posunu.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "veřejně doložený self-host/open-source příběh",
+        "stejně stručný static-status survivability claim",
+        "malý first-class veřejný MCP discovery dokument"
+      ],
+      "what_changed": [
+        "Na main se nepotvrdil nový uptimecrow-relevantní shipped posun.",
+        "Hlavní korekce je branchová: starý in-progress framing už neplatí.",
+        "UptimeCrow dál vede v kompaktnosti příběhu, ne v disciplinovanosti veřejné pravdy."
+      ],
+      "priority_for_howlops": [
+        "Veřejně nezbývá žádná další vysoce hodnotná a dobře zdokumentovaná oblast; jemnější governance / identity detaily zůstávají z veřejných zdrojů příliš tenké nebo neověřené."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Homepage schema.org offer data uvádějí Free $0, Indie $12, Pro $29, Team $79.",
+        "Free — $0: 10 monitors, 1 status page, 5-minute check intervals, 3 heartbeat monitors, email alerts, 7-day history",
+        "Pro — $29: 100 monitors, 10 status pages, 30-second checks, 25 heartbeats, 5 team seats, 1-year history",
+        "Team — $79: 200 monitors, 100 heartbeats, 10 seats, 365-day history",
+        "Free — $0"
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Homepage schema.org offer data uvádějí Free $0, Indie $12, Pro $29, Team $79.). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "GET /api/v1/public/tiers, hosted GET + POST /api/v1/mcp, write-scoped MCP nástroje, heartbeat GET/POST/HEAD, 365denní heartbeat historie, public status pages",
+      "latest_research_file": "2026-07-22_19_uptimecrow-revalidation-vs-howlops.md"
+    },
+    "uptimerobot": {
+      "slug": "uptimerobot",
+      "title": "UptimeRobot",
+      "description": "",
+      "last_checked": "2026-07-23T20:03:10Z",
+      "last_commit_date": "2026-07-23",
+      "last_commit_subject": "docs: revalidate uptimerobot vs howlops",
+      "verdict": "Částečně lepší pro HowlOps.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "shipped DNS record-change monitoring",
+        "shipped API validation s JSON / value semantics",
+        "shipped port / UDP monitor types",
+        "buyer-legible import/pricing framing proti UptimeRobot Team"
+      ],
+      "what_changed": [
+        "keyword monitoring už není missing; je shipped.",
+        "Hlavní mezera se posouvá z keyword do zbytku monitor taxonomy.",
+        "Trust problém je teď výraznější než dřív."
+      ],
+      "priority_for_howlops": [
+        "skutečně shipped DNS / API validation / port / UDP rozšíření v HowlOps,",
+        "shipped self-serve import/migration flow na main,",
+        "oprava buyer-facing srovnání HowlOps, aby nepopíralo heartbeat / incident / multi-region realitu UptimeRobot.",
+        "Hlubší response model: hloubka eskalace, on-call a incident response — ne jen komentáře spuštěné monitorem.",
+        "Lépe dohledatelná identity depth: pokud dodaná realita odpovídá veřejným docs, HowlOps má jasnější veřejný příběh kolem SSO/MFA."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Solo: začíná na $7/month v annual-billing pohledu (a ukazuje také $8 ve monthly view snippet), 60sekundové kontroly, notify seaty jako samostatný nákup, žádné login seaty.",
+        "Team: $29/month v annual-billing pohledu (a také $34 ve monthly view snippet), zahrnuje 3 notify seaty a 3 login seaty.",
+        "Enterprise: $54/month v annual-billing pohledu (a také $64 ve monthly view snippet), zahrnuje 5 notify seatů a 5 login seatů.",
+        "Free: $0/month",
+        "Solo: $7/month v annual režimu a $8/month ve monthly snippet"
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Solo: začíná na $7/month v annual-billing pohledu (a ukazuje také $8 ve monthly view snippet), 60sekundové kontroly, notify seaty jako samostatný nákup, žádné login seaty.). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "HTTP / ping / SSL expiry / heartbeat / keyword monitoring, multi-region verification, public status pages, custom_domain, email subscriber flow, incidents",
+      "latest_research_file": "2026-07-23_20_uptimerobot-revalidation-vs-howlops.md"
+    },
+    "victorops": {
+      "slug": "victorops",
+      "title": "VictorOps",
+      "description": "",
+      "last_checked": "2026-07-14T02:00:51Z",
+      "last_commit_date": "2026-07-14",
+      "last_commit_subject": "docs: revalidate victorops vs howlops",
+      "verdict": "Částečně lepší pro HowlOps, ale celkově stále za VictorOps v incident coordination hloubce.",
+      "verdict_category": "weaker",
+      "where_howlops_lags": [
+        "incidentově navázaný conference bridge / War Room hlasový bridge",
+        "osobní custom paging policies s day/time okny a admin override typu Ignore Custom Paging Policies",
+        "reroute",
+        "povinný multi-responder ack model",
+        "Similar Incidents",
+        "Incident Frequency / On-Call Review / MTTA-MTTR report suite s detailním route key rozpadáním"
+      ],
+      "what_changed": [
+        "HowlOps už má skutečnou voice response foundation, ne jen náznak.",
+        "HowlOps mezitím výrazně posílil v post-incident surface.",
+        "Největší zbývající mezera proti VictorOps je dnes v incident coordination primitives."
+      ],
+      "priority_for_howlops": [
+        "Po tomto revalidation běhu se neukazuje další vysoce hodnotná lokální práce, která by bez nového výrazného signálu převrátila hlavní závěr vůči HowlOps.",
+        "Návrat dává smysl hlavně pokud HowlOps shipne incidentové koordinační primitivy typu conference bridge, reroute, multi-responder nebo věrohodnou Similar Incidents / incident-memory vrstvu.",
+        "VictorOps je po tomto běhu v revalidation passu považovaný za dokončený."
+      ],
+      "relative_strength_note": "Aktuální corpus říká, že HowlOps proti tomuto produktu zatím spíš dohání šíři, hloubku nebo trust vrstvu.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "V current corpus chybí dost přesné veřejné pricing anchor body pro poctivý exact price recommendation. Bezpečnější je řídit se narrow-use-case pilot prodejem a ověřit willingness-to-pay na prvních klientech.",
+      "shipped_surface_excerpt": "voice_call dispatch přes Twilio Voice, voice-based phone verification, interaktivní DTMF voice action webhook, on-call schedules, overrides, shift-release, swap-request, incident timeline a notes, declare-major",
+      "latest_research_file": "2026-07-14_02_victorops-revalidation-vs-howlops.md"
+    },
+    "xmatters": {
+      "slug": "xmatters",
+      "title": "xMatters",
+      "description": "",
+      "last_checked": "2026-07-21T14:30:55Z",
+      "last_commit_date": "2026-07-21",
+      "last_commit_subject": "docs: revalidate xmatters vs howlops",
+      "verdict": "Stejný až jen částečně lepší.",
+      "verdict_category": "mixed",
+      "where_howlops_lags": [
+        "Flow Designer, Workflow Templates, Conditional Branching, custom steps, workflow audit trail, hybridní workflow runtime, Historical On-Call report, service mapy a change intelligence"
+      ],
+      "what_changed": [
+        "Branch kontext se zúžil a je méně relevantní pro hlavní xMatters mezeru.",
+        "Shipped integrační surface už není férové rámovat jako slabý.",
+        "Největší zbývající rozdíl je pořád v orchestration a service-centric explainability."
+      ],
+      "priority_for_howlops": [
+        "Žádné další vysoce hodnotné lokálně doložitelné oblasti se po tomto revalidation běhu neukázaly; produkt je pro aktuální pass považovaný za uzavřený."
+      ],
+      "relative_strength_note": "Aktuální corpus je smíšený: HowlOps má dílčí výhody, ale ne čistý celkový náskok.",
+      "stronger_signals": [
+        "Veřejně ověřený roční revenue údaj zatím v current research není."
+      ],
+      "public_price_signals": [
+        "Free: US $0, Up to 10 users"
+      ],
+      "public_revenue_signals": [],
+      "howlops_price_potential": "Veřejný pricing anchor existuje (Free: US $0, Up to 10 users). Současný corpus spíš podporuje founder-led team pricing než čistý low-end uptime checker positioning.",
+      "shipped_surface_excerpt": "business service katalog s blast radius, analytics s P50/P95/P99, TTA, TTR, SLA exportem a GetOnCallCoverageGaps, široký integrační surface, REST API, hostovaný MCP",
+      "latest_research_file": "2026-07-21_14_xmatters-revalidation-vs-howlops.md"
+    }
+  }
+}

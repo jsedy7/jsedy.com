@@ -1,0 +1,139 @@
+{{- define "main" }}
+{{- $summary := hugo.Data.summary_research }}
+{{- $competitors := index $summary "competitors" }}
+{{- $buckets := index $summary "buckets" }}
+{{- $overall := index $summary "overall" }}
+{{- $sectionSlug := path.Base (strings.TrimSuffix "/" .File.Dir) }}
+{{- $sectionMeta := cond (and $competitors (ne $sectionSlug "summary")) (index $competitors $sectionSlug) nil }}
+
+<style>
+.summary-grid { display:grid; gap:1rem; }
+.summary-card { border:1px solid var(--border); border-radius:14px; padding:1rem 1.1rem; background:var(--entry); position:relative; }
+.summary-card h3, .summary-card h4 { margin-top:0; margin-bottom:.55rem; }
+.summary-badges { display:flex; flex-wrap:wrap; gap:.45rem; margin:.6rem 0 .8rem; }
+.summary-badge { font-size:.78rem; padding:.22rem .5rem; border-radius:999px; background:var(--code-bg); color:var(--secondary); }
+.summary-badge.stronger { background:#16351f; color:#b8f2c8; }
+.summary-badge.mixed { background:#3a3118; color:#f3e0a6; }
+.summary-badge.weaker { background:#3b1e1e; color:#f6c1c1; }
+.summary-list { margin:.55rem 0 0 1.1rem; }
+.summary-list li { margin:.3rem 0; }
+.summary-note { color:var(--secondary); font-size:.95rem; }
+.summary-kicker { color:var(--secondary); font-size:.92rem; margin:.1rem 0 .5rem; }
+.summary-link { position:absolute; inset:0; }
+.summary-section-grid { display:grid; gap:1rem; margin:1rem 0 1.5rem; }
+@media (min-width: 900px) {
+  .summary-section-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .summary-section-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+</style>
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}<div class="post-description">{{ . }}</div>{{- end }}
+</header>
+
+{{- if .Sections }}
+<div class="summary-section-grid two">
+  <section class="summary-card">
+    <h3>HowlOps saleability now</h3>
+    <p>{{ index $overall "sellability_posture" }}</p>
+    <ul class="summary-list">
+      {{- range index $overall "priorities" }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{- with index $overall "pricing_truth_risk" }}<p class="summary-note">{{ . }}</p>{{ end }}
+  </section>
+  <section class="summary-card">
+    <h3>Relative position across competitors</h3>
+    <div class="summary-badges">
+      <span class="summary-badge stronger">Stronger: {{ len (index $buckets "stronger") }}</span>
+      <span class="summary-badge mixed">Mixed: {{ len (index $buckets "mixed") }}</span>
+      <span class="summary-badge weaker">Weaker: {{ len (index $buckets "weaker") }}</span>
+    </div>
+    <p class="summary-note">{{ index $overall "not_indexable_note" }}</p>
+  </section>
+</div>
+
+<div class="summary-grid">
+  {{- range .Sections }}
+  {{- $slug := path.Base (strings.TrimSuffix "/" .File.Dir) }}
+  {{- $meta := index $competitors $slug }}
+  <article class="summary-card">
+    <h3>{{ or .Title (.Path | path.Base | humanize | title) }}</h3>
+    <div class="summary-kicker">{{ with $meta }}{{ .description }}{{ else }}Private competitor summary{{ end }}</div>
+    {{- with $meta }}
+    <div class="summary-badges">
+      <span class="summary-badge {{ .verdict_category }}">{{ .verdict_category | title }}</span>
+      {{- with .last_checked }}<span class="summary-badge">Checked: {{ . }}</span>{{ end }}
+      {{- with .last_commit_date }}<span class="summary-badge">Updated: {{ . }}</span>{{ end }}
+    </div>
+    <p><strong>Verdict:</strong> {{ .verdict }}</p>
+    <h4>Where HowlOps lags</h4>
+    <ul class="summary-list">{{ range first 3 .where_howlops_lags }}<li>{{ . }}</li>{{ end }}</ul>
+    <h4>Why it matters</h4>
+    <ul class="summary-list">{{ range first 3 .priority_for_howlops }}<li>{{ . }}</li>{{ end }}</ul>
+    {{- if gt (len .public_price_signals) 0 }}
+      <p class="summary-note"><strong>Public pricing anchors:</strong> {{ delimit (first 2 .public_price_signals) " · " }}</p>
+    {{- else if gt (len .public_revenue_signals) 0 }}
+      <p class="summary-note"><strong>Financial signals:</strong> {{ delimit (first 2 .public_revenue_signals) " · " }}</p>
+    {{- else }}
+      <p class="summary-note">No clean public revenue or pricing anchor extracted yet.</p>
+    {{- end }}
+    {{- with .howlops_price_potential }}<p class="summary-note"><strong>HowlOps saleability:</strong> {{ . }}</p>{{ end }}
+    {{- end }}
+    <a class="summary-link" aria-label="Open {{ or .Title (.Path | path.Base) }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- else }}
+  {{- with $sectionMeta }}
+  <div class="summary-section-grid three">
+    <section class="summary-card">
+      <h3>1. What the platform has and HowlOps still lacks</h3>
+      <ul class="summary-list">{{ range .where_howlops_lags }}<li>{{ . }}</li>{{ end }}</ul>
+    </section>
+    <section class="summary-card">
+      <h3>2. Why this is useful for HowlOps</h3>
+      <ul class="summary-list">{{ range .priority_for_howlops }}<li>{{ . }}</li>{{ end }}</ul>
+    </section>
+    <section class="summary-card">
+      <h3>3. Current relative strength</h3>
+      <div class="summary-badges">
+        <span class="summary-badge {{ .verdict_category }}">{{ .verdict_category | title }}</span>
+        {{ with .last_checked }}<span class="summary-badge">Checked: {{ . }}</span>{{ end }}
+        {{ with .last_commit_date }}<span class="summary-badge">Updated: {{ . }}</span>{{ end }}
+      </div>
+      <p><strong>Verdict:</strong> {{ .verdict }}</p>
+      <p class="summary-note">{{ .relative_strength_note }}</p>
+      {{- if gt (len .what_changed) 0 }}
+      <h4>What changed recently</h4>
+      <ul class="summary-list">{{ range .what_changed }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- end }}
+    </section>
+  </div>
+
+  <div class="summary-section-grid two">
+    <section class="summary-card">
+      <h3>4. Financial potential vs HowlOps</h3>
+      {{- if gt (len .public_price_signals) 0 }}
+      <h4>Public pricing anchors</h4>
+      <ul class="summary-list">{{ range .public_price_signals }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- end }}
+      {{- if gt (len .public_revenue_signals) 0 }}
+      <h4>Public revenue / business signals</h4>
+      <ul class="summary-list">{{ range .public_revenue_signals }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- else }}
+      <p class="summary-note">Current corpus does not contain a clean publicly verified annual revenue or client-count proof for this competitor.</p>
+      {{- end }}
+    </section>
+    <section class="summary-card">
+      <h3>5. Realistic HowlOps pricing potential</h3>
+      <p>{{ .howlops_price_potential }}</p>
+      <p class="summary-note">This is a synthesis from public competitor pricing and current HowlOps trust/readiness notes — not invented revenue data and not a replacement for live customer discovery.</p>
+      {{- with .shipped_surface_excerpt }}{{ if . }}<p class="summary-note"><strong>Shipped context:</strong> {{ . }}</p>{{ end }}{{ end }}
+      {{- with .latest_research_file }}<p class="summary-note"><strong>Source run:</strong> {{ . }}</p>{{ end }}
+    </section>
+  </div>
+  {{- end }}
+{{- end }}
+{{- end }}
