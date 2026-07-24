@@ -13,7 +13,8 @@
 
 <style>
 .read-meta-grid { display:grid; gap:1rem; margin:1rem 0 1.5rem; }
-@media (min-width: 900px) { .read-meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 700px) { .read-meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .read-meta-grid.read-meta-grid-wide { grid-template-columns: 1.25fr .95fr; } }
 .read-card { border:1px solid var(--border); border-radius:14px; padding:1rem 1.1rem; background:var(--entry); }
 .read-badges { display:flex; flex-wrap:wrap; gap:.45rem; margin:.6rem 0 .8rem; }
 .read-badge { font-size:.78rem; padding:.22rem .5rem; border-radius:999px; background:var(--code-bg); color:var(--secondary); }
@@ -35,7 +36,7 @@
     {{- with index $featureMeta "summary" }}<div class="post-description">{{ . }}</div>{{ end }}
   </header>
 
-  <div class="read-meta-grid">
+  <div class="read-meta-grid read-meta-grid-wide">
     <section class="read-card">
       <h3 style="margin-top:0;">What changed</h3>
       {{- with index $featureMeta "last_commit_subject" }}<p>{{ . }}</p>{{ else }}<p class="read-note">No commit summary extracted.</p>{{ end }}

@@ -7,8 +7,10 @@
 <style>
 .read-grid { display:grid; gap:1rem; }
 .read-meta-grid { display:grid; gap:1rem; margin:1rem 0 1.5rem; }
-@media (min-width: 900px) {
-  .read-meta-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 600px) {
+  .read-meta-grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1050px) {
   .read-meta-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 .read-card { border:1px solid var(--border); border-radius:14px; padding:1rem 1.1rem; background:var(--entry); position:relative; }
@@ -75,7 +77,7 @@
 {{- else }}
   {{- with $sectionMeta }}
   <div class="read-meta-grid three">
-    <section class="read-card">
+    <section class="read-card" style="grid-column: 1 / -1;">
       <h4>At a glance</h4>
       <div class="read-badges">
         {{- with index . "last_checked" }}<span class="read-badge">Checked: {{ . }}</span>{{ end }}
@@ -83,7 +85,7 @@
       </div>
       {{- $findings := index . "key_findings" }}
       {{- if gt (len $findings) 0 }}
-      <ul class="read-list">{{ range first 4 $findings }}<li>{{ . }}</li>{{ end }}</ul>
+      <ul class="read-list">{{ range first 6 $findings }}<li>{{ . }}</li>{{ end }}</ul>
       {{- else }}
       <p class="read-note">No extracted summary bullets yet.</p>
       {{- end }}
@@ -92,7 +94,7 @@
       <h4>HowlOps angle</h4>
       {{- $msg := index . "howlops_messaging" | default (slice) }}
       {{- if gt (len $msg) 0 }}
-      <ul class="read-list">{{ range first 4 $msg }}<li>{{ . }}</li>{{ end }}</ul>
+      <ul class="read-list">{{ range first 5 $msg }}<li>{{ . }}</li>{{ end }}</ul>
       {{- else }}
       <p class="read-note">Research has not yet produced a compact HowlOps messaging recommendation for this competitor.</p>
       {{- end }}
@@ -101,7 +103,7 @@
       <h4>Commercial snapshot</h4>
       {{- $pricing := index . "commercial_snapshot" | default (slice) }}
       {{- if gt (len $pricing) 0 }}
-      <ul class="read-list">{{ range first 4 $pricing }}<li>{{ . }}</li>{{ end }}</ul>
+      <ul class="read-list">{{ range first 5 $pricing }}<li>{{ . }}</li>{{ end }}</ul>
       {{- else }}
       <p class="read-note">No compact pricing snapshot extracted yet.</p>
       {{- end }}

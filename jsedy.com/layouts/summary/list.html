@@ -21,8 +21,11 @@
 .summary-kicker { color:var(--secondary); font-size:.92rem; margin:.1rem 0 .5rem; }
 .summary-link { position:absolute; inset:0; }
 .summary-section-grid { display:grid; gap:1rem; margin:1rem 0 1.5rem; }
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .summary-section-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .summary-section-grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1150px) {
   .summary-section-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 </style>
@@ -88,7 +91,7 @@
 {{- else }}
   {{- with $sectionMeta }}
   <div class="summary-section-grid three">
-    <section class="summary-card">
+    <section class="summary-card" style="grid-column: 1 / -1;">
       <h3>1. What the platform has and HowlOps still lacks</h3>
       <ul class="summary-list">{{ range .where_howlops_lags }}<li>{{ . }}</li>{{ end }}</ul>
     </section>
