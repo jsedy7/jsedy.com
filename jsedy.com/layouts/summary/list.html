@@ -1,5 +1,5 @@
 {{- define "main" }}
-{{- $summary := hugo.Data.summary_research }}
+{{- $summary := .Site.Data.summary_research }}
 {{- $competitors := index $summary "competitors" }}
 {{- $buckets := index $summary "buckets" }}
 {{- $overall := index $summary "overall" }}
